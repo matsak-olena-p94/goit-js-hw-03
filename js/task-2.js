@@ -1,10 +1,10 @@
 function makeArray (firstArray, secondArray, maxLength) {
     const ollArray = firstArray.concat(secondArray);
-    if (ollArray >= maxLength) {
-        return [ollArray];
+    if (ollArray.length > maxLength) {
+        return ollArray;
     }
     else {
-        return [ollArray.slice(0, maxLength)];
+        return ollArray.slice(0, maxLength);
     }
 }
 
